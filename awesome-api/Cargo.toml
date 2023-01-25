@@ -8,5 +8,5 @@ publish = false
 axum = "0.6.4"
 serde = { version = "1", features = ["derive"] }
 opentelemetry = { version = "0.18.0", features = ["rt-tokio"] }
-opentelemetry-jaeger = { version = "0.17.0", features = ["rt-tokio-current-thread"] }
+opentelemetry-jaeger = { version = "0.17.0", features = ["rt-tokio-current-thread", "reqwest_collector_client"] }
 tokio = { version = "1", features = ["full"] }
