@@ -1,0 +1,12 @@
+[package]
+name = "awesome-api"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+axum = "0.6.4"
+serde = { version = "1", features = ["derive"] }
+opentelemetry = { version = "0.18.0", features = ["rt-tokio"] }
+opentelemetry-jaeger = { version = "0.17.0", features = ["rt-tokio-current-thread"] }
+tokio = { version = "1", features = ["full"] }
